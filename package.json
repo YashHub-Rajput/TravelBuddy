@@ -1,0 +1,14 @@
+{
+  "name": "travelbuddy",
+  "version": "1.0.0",
+  "description": "TravelBuddy monorepo – run both server and client",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server":  "cd server && npm run dev",
+    "dev:client":  "cd client && npm run dev",
+    "setup":       "cp server/.env.example server/.env && echo '✅ .env created in server/. Open it and set your MONGO_URI and JWT_SECRET.'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
